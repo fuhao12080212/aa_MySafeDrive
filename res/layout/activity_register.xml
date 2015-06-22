@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forget_background" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp">
+
+        <RelativeLayout
+            android:id="@+id/register_username_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forget_input_background">
+
+            <TextView
+                android:id="@+id/register_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="用户昵称: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_username_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/register_username_tv"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="bottom"
+                android:inputType="textShortMessage"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/register_phone_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forget_input_background"
+            android:layout_below="@+id/register_username_ly">
+
+            <TextView
+                android:id="@+id/register_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="手机号码: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_phone_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="bottom"
+                android:layout_toRightOf="@+id/register_phone_tv"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:inputType="phone"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/register_name_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forget_input_background"
+            android:layout_below="@+id/register_phone_ly">
+
+            <TextView
+                android:id="@+id/register_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="真实姓名: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_name_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="bottom"
+                android:layout_toRightOf="@+id/register_name_tv"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:inputType="textShortMessage"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/register_password_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forget_input_background"
+            android:layout_below="@+id/register_name_ly">
+
+            <TextView
+                android:id="@+id/register_password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="输入密码: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_password_ed"
+                android:layout_width="fill_parent"
+                android:gravity="bottom"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/register_password_tv"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/register_repassword_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/forget_input_background"
+            android:layout_below="@+id/register_password_ly">
+
+            <TextView
+                android:id="@+id/register_repassword_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="确认密码: "
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/register_repassword_ed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/register_repassword_tv"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/forget_button"
+        android:gravity="center"
+        android:text="完成注册并登录"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

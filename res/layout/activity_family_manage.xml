@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/device_background" >
+
+    <TextView
+        android:id="@+id/family_manage_head_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_head"
+        android:gravity="center"
+        android:text="添加或者删除家人信息"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/family_add_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:alpha="0.8"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/main_menubutton" />
+
+    <ListView
+        android:id="@+id/family_manage_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/family_manage_head_tv" >
+    </ListView>
+
+</RelativeLayout>

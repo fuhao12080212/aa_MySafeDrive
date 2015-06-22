@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background" >
+
+    <RelativeLayout
+        android:id="@+id/main_head_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/main_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车主 :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/main_user_tv"
+            android:text="......"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/main_blue_bt"
+            android:background="@drawable/main__bluebt_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/main_blue_bt"
+            android:src="@drawable/main_bluesign" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_button_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <Button
+            android:id="@+id/main_start_test_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.7"
+            android:background="@drawable/main_start_test" />
+
+        <LinearLayout
+            android:id="@+id/main_button_below_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/main_start_test_bt"
+            android:layout_marginTop="30dp"
+            android:alpha="0.9" >
+
+            <Button
+                android:id="@+id/main_device_button"
+                android:layout_width="wrap_content"
+                
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/main_device_manage" />
+
+            <Button
+                android:id="@+id/main_cloud_button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+               
+                android:layout_weight="1"
+                android:background="@drawable/main_cloud_record" />
+
+            <Button
+                android:id="@+id/main_familycontrol_button"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                
+                android:layout_height="fill_parent"
+                android:background="@drawable/main_familycontrol" />
+
+            <Button
+                android:id="@+id/main_userback_button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                
+                android:textSize="18sp"
+                android:background="@drawable/main_userback" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_button_below_ly"
+            android:alpha="0.8"
+            android:background="@drawable/main_belowbutton" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/main_menu_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.8"
+        android:background="@drawable/main_menubutton" />
+
+</RelativeLayout>

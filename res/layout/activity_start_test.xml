@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/device_background" >
+
+    <LinearLayout
+        android:id="@+id/before_test_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/before_test_head"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/before_device_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙地址："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="设备名称："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="车型："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:text="车牌号："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/before_test_value_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/before_test_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/before_test_name_layout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/before_device_mac_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00:00:00"
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="OBD接口"
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="MyCar"
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/before_device_num_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:text="京AA000"
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/before_test_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/before_test_value_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/before_test_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/before_test_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="开始测试"
+            android:textColor="#ec741d" />
+    </LinearLayout>
+
+</RelativeLayout>

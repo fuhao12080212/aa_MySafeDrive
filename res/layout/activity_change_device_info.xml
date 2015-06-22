@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/device_background" >
+
+    <LinearLayout
+        android:id="@+id/change_info_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/change_device_info_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备名称："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/change_device_info_name_ed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_info_Mac_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/change_info_name_layout"
+        android:layout_below="@+id/change_info_name_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/change_device_info_mac_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙地址："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/change_device_info_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00:00"
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_info_cartype_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/change_info_name_layout"
+        android:layout_below="@+id/change_info_Mac_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/change_device_info_cartype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车型："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/change_device_info_cartype_ed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_info_num_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/change_info_name_layout"
+        android:layout_below="@+id/change_info_cartype_layout"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/change_device_info_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车牌号："
+            android:textColor="#4a84c5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/change_device_info_num_ed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_info_bt_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_info_num_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+        <Button
+            android:id="@+id/change_info_cancel_bt"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_lgbutton"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/change_info_sava_bt"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/login_lgbutton"
+            android:text="保存" />
+    </LinearLayout>
+
+</RelativeLayout>

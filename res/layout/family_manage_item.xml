@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/device_list_item" >
+
+    <TextView
+        android:id="@+id/family_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="Person"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/family_delete_bt"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:textSize="20sp"
+        android:background="@drawable/familymanage_delete" />
+
+    <Button
+        android:id="@+id/family_call_bt"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/family_delete_bt"
+        android:textSize="20sp"
+        android:background="@drawable/familymanage_call" />
+
+</RelativeLayout>
